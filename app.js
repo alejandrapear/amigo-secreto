@@ -25,14 +25,12 @@ function agregarAmigo() {
    document.querySelector("#amigo").value = "";
  }
 
-        //asignarTextoElemento("ul.name-list",nombreAmigo)
 function actualizarListaAmigos() {
 
 
     listaAmigos.forEach(function(nombreAmigo) {
-        let elemento = document.createElement("li");
-        elemento.textContent = nombreAmigo;
-        elemento.classList.add("listaAmigos");
+        asignarTextoElemento("ul.name-list",listaAmigos)
+      
         
     })
     
@@ -65,14 +63,10 @@ document.getElementById("sorteo").removeAttribute("disabled")
 
 asignarTextoElemento("h2","¡Añade a tus amigos para comenzar!!!!");
 
-//let parrafo = document.querySelector("p");
-//parrafo.innerHTML = "escribe el nombre de tus amigos"
 //introducir nombre de amigo
 //añadir nombres de amigo
 //enlistar los nombres añadidos
 //alertar de espacio vacio
-//alertar si se repite el nombre
-//si se repite el nombre añadir una caracteristica extra
 //sortear amigos
 //reiniciar juego
   
